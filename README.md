@@ -1,10 +1,10 @@
-# Dash Sentinel
+# Lifetioncoin Sentinel
 
-[![Build Status](https://travis-ci.org/dashpay/sentinel.svg?branch=master)](https://travis-ci.org/dashpay/sentinel)
+[![Build Status](https://travis-ci.org/lifetioncoinpay/sentinel.svg?branch=master)](https://travis-ci.org/lifetioncoinpay/sentinel)
 
-> An automated governance helper for Dash Masternodes.
+> An automated governance helper for Lifetioncoin Masternodes.
 
-Sentinel is an autonomous agent for persisting, processing and automating Dash governance objects and tasks. It is a Python application which runs alongside the LifetionCoinCore instance on each Dash Masternode.
+Sentinel is an autonomous agent for persisting, processing and automating Lifetioncoin governance objects and tasks. It is a Python application which runs alongside the LifetionCoinCore instance on each Lifetioncoin Masternode.
 
 ## Table of Contents
 - [Install](#install)
@@ -33,13 +33,13 @@ Update system packages and ensure virtualenv is installed:
 
 Make sure the local LifetionCoinCore daemon running is at least version 12.1 (120100)
 
-    $ dash-cli getinfo | grep version
+    $ lifetioncoin-cli getinfo | grep version
 
 ### Install Sentinel
 
 Clone the Sentinel repo and install Python dependencies.
 
-    $ git clone https://github.com/dashpay/sentinel.git && cd sentinel
+    $ git clone https://github.com/lifetioncoinpay/sentinel.git && cd sentinel
     $ virtualenv ./venv
     $ ./venv/bin/pip install -r requirements.txt
 
@@ -63,13 +63,13 @@ Test the config by running tests:
 
     $ ./venv/bin/py.test ./test
 
-With all tests passing and crontab setup, Sentinel will stay in sync with dashd and the installation is complete
+With all tests passing and crontab setup, Sentinel will stay in sync with lifetioncoind and the installation is complete
 
 ## Configuration
 
 An alternative (non-default) path to the `lifetioncoin.conf` file can be specified in `sentinel.conf`:
 
-    dash_conf=/path/to/lifetioncoin.conf
+    lifetioncoin_conf=/path/to/lifetioncoin.conf
 
 ## Troubleshooting
 
@@ -83,11 +83,11 @@ To view debug output, set the `SENTINEL_DEBUG` environment variable to anything 
 
 ## Contributing
 
-Please follow the [LifetionCoinCore guidelines for contributing](https://github.com/dashpay/dash/blob/master/CONTRIBUTING.md).
+Please follow the [LifetionCoinCore guidelines for contributing](https://github.com/lifetioncoinpay/lifetioncoin/blob/master/CONTRIBUTING.md).
 
 Specifically:
 
-* [Contributor Workflow](https://github.com/dashpay/dash/blob/master/CONTRIBUTING.md#contributor-workflow)
+* [Contributor Workflow](https://github.com/lifetioncoinpay/lifetioncoin/blob/master/CONTRIBUTING.md#contributor-workflow)
 
     To contribute a patch, the workflow is as follows:
 
