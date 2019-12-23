@@ -65,7 +65,7 @@ def has_dash_conf():
     # ensure dash_conf exists & readable
     #
     # if not, print a message stating that Dash Core must be installed and
-    # configured, including JSONRPC access in dash.conf
+    # configured, including JSONRPC access in lifetioncoin.conf
     try:
         f = io.open(config.dash_conf)
         valid_dash_conf = True
@@ -95,7 +95,7 @@ def main():
         sys.exit(1)
 
     if not has_dash_conf():
-        print("DashCore must be installed and configured, including JSONRPC access in dash.conf")
+        print("LifetionCoinCore must be installed and configured, including JSONRPC access in lifetioncoin.conf")
         sys.exit(1)
 
 

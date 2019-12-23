@@ -4,7 +4,7 @@
 
 > An automated governance helper for Dash Masternodes.
 
-Sentinel is an autonomous agent for persisting, processing and automating Dash governance objects and tasks. It is a Python application which runs alongside the DashCore instance on each Dash Masternode.
+Sentinel is an autonomous agent for persisting, processing and automating Dash governance objects and tasks. It is a Python application which runs alongside the LifetionCoinCore instance on each Dash Masternode.
 
 ## Table of Contents
 - [Install](#install)
@@ -31,7 +31,7 @@ Update system packages and ensure virtualenv is installed:
     $ sudo apt-get update
     $ sudo apt-get -y install python-virtualenv
 
-Make sure the local DashCore daemon running is at least version 12.1 (120100)
+Make sure the local LifetionCoinCore daemon running is at least version 12.1 (120100)
 
     $ dash-cli getinfo | grep version
 
@@ -67,9 +67,9 @@ With all tests passing and crontab setup, Sentinel will stay in sync with dashd 
 
 ## Configuration
 
-An alternative (non-default) path to the `dash.conf` file can be specified in `sentinel.conf`:
+An alternative (non-default) path to the `lifetioncoin.conf` file can be specified in `sentinel.conf`:
 
-    dash_conf=/path/to/dash.conf
+    dash_conf=/path/to/lifetioncoin.conf
 
 ## Troubleshooting
 
@@ -83,7 +83,7 @@ To view debug output, set the `SENTINEL_DEBUG` environment variable to anything 
 
 ## Contributing
 
-Please follow the [DashCore guidelines for contributing](https://github.com/dashpay/dash/blob/master/CONTRIBUTING.md).
+Please follow the [LifetionCoinCore guidelines for contributing](https://github.com/dashpay/dash/blob/master/CONTRIBUTING.md).
 
 Specifically:
 
@@ -101,4 +101,4 @@ Specifically:
 
 ## License
 
-Released under the MIT license, under the same terms as DashCore itself. See [LICENSE](LICENSE) for more info.
+Released under the MIT license, under the same terms as LifetionCoinCore itself. See [LICENSE](LICENSE) for more info.
